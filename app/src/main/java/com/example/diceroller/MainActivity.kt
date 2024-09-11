@@ -74,7 +74,8 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(onClick = { result = (1..6).random() }) {
-            Text(text = stringResource(id = R.string.roll))
+            Text(text = stringResource(id = R.string.roll),
+                color = Color.White)
             
         }
 
@@ -83,7 +84,7 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
     }
 }
 
-@Preview (showBackground = true, widthDp = 320, heightDp = 640)
+@Preview (showBackground = true, widthDp = 320, heightDp = 320)
 @Composable
 fun DiceRollerPreview(){
         DiceRollerApp(modifier = Modifier.background(Color(0xff78bb7b)))
